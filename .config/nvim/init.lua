@@ -124,6 +124,7 @@
    { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } }, --- Find files
    {'tpope/vim-fugitive'}, --- Git
    { 'lewis6991/gitsigns.nvim', config = true }, --- Edited Line Icons
+    { 'dense-analysis/ale' }, -- ESlint
    -- nvim-cmp (Auto-completion engine)
    { "hrsh7th/nvim-cmp" },
    { "hrsh7th/cmp-nvim-lsp" },
@@ -205,6 +206,14 @@
      component_separators = {'', ''},
    },
  }
+ -- ESlint
+ vim.g.ale_linters = {
+  javascript = {'eslint'},
+  typescript = {'eslint'},
+}
+
+vim.g.ale_fix_on_save = 1
+
  -- NeoVimTree
  local function my_on_attach(bufnr)
    local api = require("nvim-tree.api")
