@@ -105,7 +105,8 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias setting="nvim ~/.settings"
+alias code="nvim"
+alias settings="cd ~/.settings"
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 [[ -s /Users/trungbn/.autojump/etc/profile.d/autojump.sh ]] && source /Users/trungbn/.autojump/etc/profile.d/autojump.sh
