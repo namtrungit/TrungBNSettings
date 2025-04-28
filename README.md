@@ -8,7 +8,7 @@ This is my personal development environment setup, including **ZSH**, **Tmux**, 
 
 - [ZSH Setup](#zsh-setup)
 - [Tmux Setup](#tmux-setup)
-- [LazyVim Setup](#lazyvim-setup)
+- [Neovim Setup](#neovim-setup)
 - [Finalizing Setup](#finalizing-setup)
 - [Installed Plugins](#installed-plugins)
 - [Customization](#customization)
@@ -18,43 +18,104 @@ This is my personal development environment setup, including **ZSH**, **Tmux**, 
 ## ZSH Setup
 
 ### Install ZSH
-### Install Oh-my-zsh
-#### Install zsh-autosuggestion
+
+```bash
+brew install zsh
+```
+
+### Install Oh-My-Zsh
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+### Install Plugins
+
+#### zsh-autosuggestions
+
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+```
 
-#### Install zsh-syntax-highlight
+#### zsh-syntax-highlighting
+
 ```bash
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+```
 
-#### Install autojump
+#### autojump
+
 ```bash
 git clone https://github.com/wting/autojump.git ~/.oh-my-zsh/custom/plugins/autojump
+```
 
-#### Install dracula theme
+#### Dracula theme
+
 ```bash
 git clone https://github.com/dracula/zsh.git ~/.oh-my-zsh/custom/themes/dracula
+```
 
-#### Sympol link
+### Symbolic Link for .zshrc
+
 ```bash
 ln -s ~/.settings/.zshrc ~/.zshrc
+```
+
+---
 
 ## Tmux Setup
-### Tmux Install
+
+### Install Tmux
+
 ```bash
 brew install tmux
+```
 
-#### Sympol link
+### Symbolic Link for .tmux.conf
+
 ```bash
 ln -s ~/.settings/.tmux.conf ~/.tmux.conf
+```
 
-## Neovim setup
+---
+
+## Neovim Setup
+
 ### Install Neovim
+
 ```bash
 brew install neovim
+```
 
 ### Install LazyVim
+
 ```bash
 git clone https://github.com/folke/lazy.nvim.git ~/.local/share/nvim/site/pack/packer/start/lazy.nvim
+```
+
+### Symbolic Link for Neovim Config
+
+```bash
 ln -s ~/.settings/.config ~/.config
+```
+
+---
+
+# 📦 Finalizing Setup
+
+(Mention any final steps here like sourcing files, restarting shell, etc.)
+
+---
+
+# 🔌 Installed Plugins
+
+(List the plugins you installed via LazyVim, ZSH, Tmux)
+
+---
+
+# 🎨 Customization
+
+(Write any customizations you made.)
+
+---
 
